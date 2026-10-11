@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE OK ROCK | Fan Page</title>
+
+    <style>
+        /* Diseño general */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101010;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Menú de navegación */
+        nav {
+            background-color: #080808;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e50914;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        /* Portada principal */
+        .portada {
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.9)
+            ), url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1600&q=80");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .portada h1 {
+            font-size: clamp(42px, 9vw, 76px);
+            letter-spacing: 5px;
+            color: #ffffff;
+            text-shadow: 3px 3px #e50914;
+        }
+
+        .portada p {
+            font-size: 18px;
+            margin: 15px 0 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #e50914;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: #a80710;
+        }
+
+        /* Secciones */
+        section {
+            padding: 45px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #ff3038;
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .descripcion {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* Imagen de la banda / ambiente de concierto */
+        .imagen-banda {
+            display: block;
+            width: 100%;
+            max-width: 750px;
+            max-height: 420px;
+            object-fit: cover;
+            margin: 25px auto 0;
+            border-radius: 10px;
+            border: 2px solid #333;
+        }
+
+        /* Lista de canciones */
+        .canciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .cancion {
+            background-color: #1c1c1c;
+            border-left: 4px solid #e50914;
+            padding: 20px;
+            border-radius: 6px;
+            transition: transform 0.3s;
+        }
+
+        .cancion:hover {
+            transform: translateY(-5px);
+        }
+
+        .cancion h3 {
+            margin-bottom: 8px;
+        }
+
+        .cancion p {
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        /* Botón interactivo */
+        #mensaje {
+            margin-top: 20px;
+            text-align: center;
+            color: #ff646a;
+            font-weight: bold;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #080808;
+            text-align: center;
+            padding: 25px;
+            color: #aaaaaa;
+            border-top: 2px solid #e50914;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menú -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#banda">La banda</a>
+        <a href="#canciones">Canciones</a>
+    </nav>
+
+    <!-- Portada -->
+    <header class="portada" id="inicio">
+        <h1>ONE OK ROCK</h1>
+        <p>Rock japonés que se siente en el corazón. 🎸</p>
+        <a class="boton" href="#canciones">Descubrir canciones</a>
+    </header>
+
+    <!-- Información de la banda -->
+    <section id="banda">
+        <h2>Sobre la banda</h2>
+
+        <div class="descripcion">
+            <p>
+                ONE OK ROCK es una banda japonesa de rock conocida
+                por su energía en el escenario, sus melodías intensas
+                y sus canciones llenas de emoción.
+            </p>
+
+            <p>
+                Su música combina rock alternativo, pop rock y
+                sonidos potentes que conectan con fans de todo el mundo.
+            </p>
+        </div>
+
+        <img
+            class="imagen-banda"
+            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80"
+            alt="Concierto de rock con luces y público"
+        >
+    </section>
+
+    <!-- Canciones -->
+    <section id="canciones">
+        <h2>Canciones populares</h2>
+
+        <div class="canciones">
+
+            <article class="cancion">
+                <h3>The Beginning</h3>
+                <p>Una canción intensa y llena de energía.</p>
+            </article>
+
+            <article class="cancion">
+                <h3>Wherever You Are</h3>
+                <p>Una balada romántica muy querida por sus fans.</p>
+            </article>
+
+            <article class="cancion">
+                <h3>Stand Out Fit In</h3>
+                <p>Una canción sobre la identidad y la aceptación.</p>
+            </article>
+
+            <article class="cancion">
+                <h3>Wasted Nights</h3>
+                <p>Un tema emotivo que invita a vivir el momento.</p>
+            </article>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="boton" onclick="mostrarMensaje()">
+                ¡Viva ONE OK ROCK!
+            </button>
+
+            <p id="mensaje"></p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Fan Page de ONE OK ROCK</p>
+        <p>Proyecto de práctica HTML, CSS y JavaScript · 2026</p>
+    </footer>
+
+    <script>
+        // Esta función muestra un mensaje al pulsar el botón.
+        function mostrarMensaje() {
+            document.getElementById("mensaje").textContent =
+                "¡Que nunca deje de sonar el rock! 🎸❤️";
+        }
+    </script>
+
+</body>
+</html>
